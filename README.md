@@ -1,10 +1,10 @@
 # SciFIBench
 
-[**SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation**](https://github.com/jonathan-roberts1/SciFIBench/blob/main/SciFIBench.pdf)
+[**SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation**](https://arxiv.org/abs/2405.08807)
 
 Jonathan Roberts, Kai Han, Neil Houlsby, Samuel Albanie
 
-[[Project Page - coming soon!]()] [[Paper](https://github.com/jonathan-roberts1/SciFIBench/blob/main/SciFIBench.pdf)] [[Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench)]
+[[Project Page - coming soon!]()] [[Paper](https://arxiv.org/abs/2405.08807)] [[Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench)]
 
 ## Key insights:
 - We use adversarial filtering and human verification to curate a challenging, high-quality 1000-question scientific figure interpretation benchmark.
