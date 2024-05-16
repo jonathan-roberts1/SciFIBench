@@ -4,7 +4,7 @@
 
 Jonathan Roberts, Kai Han, Neil Houlsby, Samuel Albanie
 
-[[Project Page - coming soon!]()] [[Paper](https://arxiv.org/abs/2405.08807)] [[Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench)]
+[[Project Page - coming soon!]()] [[Paper](https://arxiv.org/abs/2405.08807)] [[Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench)][[Code - coming soon!]()]
 
 ## Key insights:
 - We use adversarial filtering and human verification to curate a challenging, high-quality 1000-question scientific figure interpretation benchmark.
