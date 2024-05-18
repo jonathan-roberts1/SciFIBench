@@ -25,6 +25,22 @@ Jonathan Roberts, Kai Han, Neil Houlsby, Samuel Albanie
 ![](images/alignment.png '')
 ![](images/alignment_results.png '')
 
+## Questions
+If you have any questions about our work, please reach out or open an issue in this repository!
+
+## Citation
+If you found our work useful in your own research, please consider citing our paper:
+```latex
+@article{roberts2024scifibench,
+  title={SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation}, 
+  author={Jonathan Roberts and Kai Han and Neil Houlsby and Samuel Albanie},
+  year={2024},
+  journal={arXiv preprint arXiv:2405.08807},
+}
+
+```
+
+
 
 
 ## Example code
