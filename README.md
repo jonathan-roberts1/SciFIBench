@@ -39,12 +39,11 @@ If you have any questions about our work, please reach out or open an issue in t
 If you found our work useful in your own research, please consider citing our paper:
 ```latex
 @article{roberts2024scifibench,
-  title={SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation}, 
-  author={Jonathan Roberts and Kai Han and Neil Houlsby and Samuel Albanie},
-  year={2024},
+  title={SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation},
+  author={Roberts, Jonathan and Han, Kai and Houlsby, Neil and Albanie, Samuel},
   journal={arXiv preprint arXiv:2405.08807},
+  year={2024}
 }
-
 ```
 
 
