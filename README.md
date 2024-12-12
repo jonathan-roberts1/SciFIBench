@@ -58,23 +58,34 @@ from datasets import load_dataset
 
 # load dataset
 dataset = load_dataset("jonathan-roberts1/SciFIBench") # optional: set cache_dir="PATH/TO/MY/CACHE/DIR"
-# figure2caption_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="Figure2Caption")
-# caption2figure_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="Caption2Figure")
+# there are 4 dataset splits, which can be indexed separately 
+# cs_figure2caption_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="CS_Figure2Caption")
+# cs_caption2figure_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="CS_Caption2Figure")
+# general_figure2caption_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="General_Figure2Caption")
+# general_caption2figure_dataset = load_dataset("jonathan-roberts1/SciFIBench", split="General_Caption2Figure")
 """
 DatasetDict({
-    Caption2Figure: Dataset({
+    CS_Caption2Figure: Dataset({
         features: ['ID', 'Question', 'Options', 'Answer', 'Category', 'Images'],
         num_rows: 500
     })
-    Figure2Caption: Dataset({
+    CS_Figure2Caption: Dataset({
+        features: ['ID', 'Question', 'Options', 'Answer', 'Category', 'Images'],
+        num_rows: 500
+    })
+    General_Caption2Figure: Dataset({
+        features: ['ID', 'Question', 'Options', 'Answer', 'Category', 'Images'],
+        num_rows: 500
+    })
+    General_Figure2Caption: Dataset({
         features: ['ID', 'Question', 'Options', 'Answer', 'Category', 'Images'],
         num_rows: 500
     })
 })
 """
 
-# select task
-figure2caption_dataset = dataset['Figure2Caption']
+# select task and split
+cs_figure2caption_dataset = dataset['CS_Figure2Caption']
 """
 Dataset({
     features: ['ID', 'Question', 'Options', 'Answer', 'Category', 'Images'],
@@ -83,7 +94,7 @@ Dataset({
 """
 
 # query items
-figure2caption_dataset[40] # e.g., the 41st element
+cs_figure2caption_dataset[40] # e.g., the 41st element
 """
 {'ID': 40,
  'Question': 'Which caption best matches the image?',
@@ -96,6 +107,7 @@ figure2caption_dataset[40] # e.g., the 41st element
  'Category': 'other cs',
  'Images': [<PIL.PngImagePlugin.PngImageFile image mode=RGB size=501x431>]}
 """
+
 ```
 
 ### Figure -> Caption task inference w/ Qwen-VL-Chat via HuggingFace transformers
@@ -120,7 +132,7 @@ def hf_inference(automatic_eval: bool, model_name: str = "Qwen/Qwen-VL-Chat") ->
     """
 
     dataset = load_dataset("jonathan-roberts1/SciFIBench", 
-                        split="Figure2Caption") # optional: set cache_dir="PATH/TO/MY/CACHE/DIR"
+                        split="CS_Figure2Caption") # or split="General_Figure2Caption"
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # dataframe to store results
@@ -234,7 +246,7 @@ def gcp_inference(automatic_eval: bool, project_id: str, region: str,
                   model_name: str = 'gemini-pro-vision') -> float:
  
     dataset = load_dataset("jonathan-roberts1/SciFIBench", 
-                        split="Caption2Figure") # optional: set cache_dir="PATH/TO/MY/CACHE/DIR"
+                        split="CS_Caption2Figure")  # or split="General_Caption2Figure"
 
     # dataframe to store results
     output_df = pd.DataFrame(columns=["Question_ID", "Output", "Answer", "Correct?"])
