@@ -2,9 +2,14 @@
 
 ### Jonathan Roberts, Kai Han, Neil Houlsby, Samuel Albanie
 
-### [Project Page](https://scifibench.github.io/) | [Paper](https://arxiv.org/abs/2405.08807) | [Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench) | [Code](#example-code)
+### [Project Page](https://scifibench.github.io/) | [Paper](https://arxiv.org/abs/2405.08807) | [Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench) | [Code](#example-code) | [NeurIPS 2024](https://neurips.cc/virtual/2024/poster/97770) 
+
+[![OpenCompass](https://opencompass.oss-cn-shanghai.aliyuncs.com/image/compass-hub/badge.svg)](https://hub.opencompass.org.cn/dataset-detail/SciFIBench)
+
 
 ## News
+🎉 **[09/01/25]** SciFIBench added to OpenCompass
+
 🎉 **[26/09/24]** SciFIBench accepted at NeurIPS 2024 (Datasets and Benchmarks Track)
 
 🎉 **[18/05/24]** [Example inference, evaluation and dataset code added](#example-code)
