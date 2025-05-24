@@ -1,8 +1,12 @@
 # [**SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation**](https://arxiv.org/abs/2405.08807)
 
+**NeurIPS 2024 Datasets & Benchmarks Track**
+
 ### Jonathan Roberts, Kai Han, Neil Houlsby, Samuel Albanie
 
-### [Project Page](https://scifibench.github.io/) | [Paper](https://arxiv.org/abs/2405.08807) | [Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench) | [Code](#example-code) | [NeurIPS 2024](https://neurips.cc/virtual/2024/poster/97770) 
+
+
+### [Project Page](https://scifibench.github.io/) | [Paper](https://arxiv.org/abs/2405.08807) | [Data](https://huggingface.co/datasets/jonathan-roberts1/SciFIBench) | [Code](#example-code) | [NeurIPS](https://neurips.cc/virtual/2024/poster/97770) 
 
 [![OpenCompass](https://opencompass.oss-cn-shanghai.aliyuncs.com/image/compass-hub/badge.svg)](https://hub.opencompass.org.cn/dataset-detail/SciFIBench)
 
